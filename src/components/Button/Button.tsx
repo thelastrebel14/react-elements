@@ -1,3 +1,4 @@
+import { ButtonSize } from './Button.definitions';
 import './button.css';
 
 interface ButtonProps {
@@ -12,7 +13,7 @@ interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large';
+  size?: ButtonSize;
   /**
    * Button contents
    */
@@ -28,7 +29,7 @@ interface ButtonProps {
  */
 export const Button = ({
   primary = false,
-  size = 'medium',
+  size = ButtonSize.MEDIUM,
   backgroundColor,
   label,
   ...props
