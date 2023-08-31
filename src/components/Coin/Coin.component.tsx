@@ -1,3 +1,4 @@
+import { CoinSize } from './Coin.definitions';
 import './Coin.scss'
 
 interface ICoin {
@@ -16,13 +17,13 @@ interface ICoin {
     /**
      * How large should the coin be?
      */
-    size?: 'small' | 'medium' | 'large';
+    size?: CoinSize;
 }
 
 const Coin = ({
         frontImg,
         label,
-        size = 'small',
+        size = CoinSize.SMALL,
         imgAlt
     }: ICoin): JSX.Element => {
     return (

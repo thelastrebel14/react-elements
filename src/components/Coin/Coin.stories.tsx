@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Coin from './Coin.component';
+import { CoinSize } from './Coin.definitions';
 
 // export default {
 //     title: 'Example/Coin',
@@ -35,7 +36,7 @@ const meta = {
     args: {
         frontImg: defaultImg,
         label: 'Korra',
-        size: 'small',
+        size: CoinSize.SMALL,
         imgAlt: 'Small'
     },
   };
@@ -44,7 +45,7 @@ const meta = {
     args: {
         frontImg: defaultImg,
         label: 'Korra',
-        size: 'medium',
+        size: CoinSize.MEDIUM,
         imgAlt: 'Medium'
     },
   };
@@ -53,7 +54,7 @@ const meta = {
     args: {
         frontImg: defaultImg,
         label: 'Korra',
-        size: 'large',
+        size: CoinSize.LARGE,
         imgAlt: 'Large'
     },
   };
