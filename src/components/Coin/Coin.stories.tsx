@@ -26,7 +26,8 @@ const meta = {
   export const Default: Story = {
     args: {
         frontImg: defaultImg,
-        label: 'Korra'
+        label: 'Korra',
+        imgAlt: 'Default'
     },
   };
 
@@ -34,7 +35,8 @@ const meta = {
     args: {
         frontImg: defaultImg,
         label: 'Korra',
-        size: 'small'
+        size: 'small',
+        imgAlt: 'Small'
     },
   };
 
@@ -42,7 +44,8 @@ const meta = {
     args: {
         frontImg: defaultImg,
         label: 'Korra',
-        size: 'medium'
+        size: 'medium',
+        imgAlt: 'Medium'
     },
   };
 
@@ -50,6 +53,7 @@ const meta = {
     args: {
         frontImg: defaultImg,
         label: 'Korra',
-        size: 'large'
+        size: 'large',
+        imgAlt: 'Large'
     },
   };
