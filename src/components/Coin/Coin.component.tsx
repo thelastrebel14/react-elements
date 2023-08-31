@@ -1,6 +1,36 @@
-const Coin = (): JSX.Element => {
+import './Coin.scss'
+
+interface ICoin {
+    /**
+     * Front side coin image source
+     */
+    frontImg: string;
+    /**
+     * Back side coin label
+     */
+    label: string;
+    /**
+     * How large should the coin be?
+     */
+    size?: 'small' | 'medium' | 'large';
+}
+
+const Coin = ({
+        frontImg,
+        label,
+        size = 'small'
+    }: ICoin): JSX.Element => {
     return (
-        <span>COIN</span>
+        <div className={`coin-container coin-size--${size}`}>
+            <div className='coin'>
+                <div className="front-side">
+                    <img src={frontImg} alt="Avatar" className='front-img'/>
+                </div>
+                <div className='back-side'>
+                    <h2 className='back-label'>{label}</h2>
+                </div>
+            </div>  
+        </div>
     )
 }
 
